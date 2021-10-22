@@ -1,0 +1,81 @@
+.navbar{
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: rgb(179, 0, 149);
+}
+.navbar h5{
+  color: white;
+}
+.navbar button{
+  background: white;
+  color: rgb(179, 0, 149);
+  font-weight: bold;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.navbar button:hover{
+  transform: scale(1.1);
+}
+
+.vente{
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.vente .button_panier{
+  display: flex;
+  justify-content:end;
+}
+.vente .button_panier button{
+  background-color: rgb(179, 0, 149);
+  color: white;
+}
+.vente .produit mat-grid-list{
+  width: 100%;
+
+}
+.vente .produit mat-grid-list mat-grid-tile{
+  transition: 0.5s;
+}
+.vente .produit mat-grid-list mat-grid-tile:hover{
+  transform: scale(1.1);
+}
+
+.vente .produit mat-grid-list mat-card{
+  width: 300px;
+ margin: 20px;
+}
+
+
+.vente .produit mat-grid-list mat-card mat-card-header{
+  background-color: rgb(179, 0, 149);
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.vente .produit mat-grid-list mat-card mat-card-header h4{
+ color: white;
+ font-size: 20px;
+ font-weight: bold;
+ margin-right: 25px;
+ margin-top: 10px;
+}
+.vente .produit mat-grid-list mat-card mat-card-content{
+display: flex;
+justify-content: center;
+}
+
+.vente .produit mat-grid-list mat-card mat-card-content h5{
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.vente .produit mat-grid-list mat-card mat-card-actions{
+  display: flex;
+justify-content: center;
+}
+.vente .produit mat-grid-list mat-card mat-card-actions button{
+  border: 1px solid rgb(179, 0, 149);
+  background-color: white;
+}

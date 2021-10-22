@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="close">
+    <button mat-flat-button color="accent" (click)="onClose()">Fermer</button>
+  </div>
+  <div class="achat_panier">
+    <mat-card>
+      <div class="repas">
+        <h5>Emballage</h5>
+      </div>
+      <div class="emballage">
+        <p>Emballage: 300ar</p>
+      </div>
+      <div class="serviette">
+        <p>Serviette: 200Ar</p>
+      </div>
+      <div class="serviette">
+        <p>Couvert: 100Ar</p>
+      </div>
+      <div class="total_prix">
+        <p>Total: 500AR</p>
+      </div>
+      <div class="button_suprimer">
+        <button mat-flat-button color="warn">Suprimer</button>
+      </div>
+    </mat-card>
+  </div>
+  <div class="footer_card">
+    <div class="grand_prix">
+      <h5>Total Achats: 50 000 Ar</h5>
+    </div>
+    <form [formGroup]="service.form">
+      <div class="form_controles">
+        <input type="hidden" formControlName="$key">
+        <mat-form-field>
+          <input formControlName="nom" appearance="outline" matInput
+            placeholder="Entre nom">
+          <mat-error>Remplir le champ nom s'il vous plait.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="prenom" appearance="outline" matInput
+            placeholder="Entre prénom">
+          <mat-error>Remplir le champ prenom s'il vous plait.</mat-error>
+        </mat-form-field>
+
+
+        <mat-form-field>
+          <input formControlName="email" appearance="outline" matInput
+            placeholder="Entre email" type="email">
+          <mat-error>Remplir le champ email s'il vous plait.</mat-error>
+        </mat-form-field>
+
+      </div>
+      <button mat-flat-button color="accent" [disabled]="service.form.invalid" type="submit">Valider</button>
+    </form>
+
+  </div>
+</div>

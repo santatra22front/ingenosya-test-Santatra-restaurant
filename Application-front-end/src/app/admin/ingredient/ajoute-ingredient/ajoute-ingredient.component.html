@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="close">
+    <button mat-flat-button color="accent" (click)="onClose()">Fermer</button>
+  </div>
+  <div class="form_content">
+    <form [formGroup]="service.form">
+      <div class="form_controles">
+        <input type="hidden" formControlName="$key">
+        <mat-form-field>
+          <mat-select formControlName="repas" placeholder="Select repas">
+            <ng-container>
+              <mat-option value="1">Pizza</mat-option>
+              <mat-option value="2">Makaron</mat-option>
+            </ng-container>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName="nomIngredient" appearance="outline" matInput
+            placeholder="Nom ingredient">
+          <mat-error>Remplir le champ nom ingredient s'il vous plait.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="quantiteIngredient" appearance="outline" matInput
+            placeholder="Quantite ingredient">
+          <mat-error>Remplir le champ quantite ingredient s'il vous plait.</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="button_submit">
+        <button mat-raised-button color="primary" type="submit"
+          [disabled]="service.form.invalid">Enregistrer</button>
+      </div>
+    </form>
+  </div>
+</div>
+

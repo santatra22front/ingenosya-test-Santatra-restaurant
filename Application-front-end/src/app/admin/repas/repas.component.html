@@ -1,0 +1,34 @@
+<section class="repas">
+  <div class="titre">
+    <h1>Listes Repas</h1>
+  </div>
+  <div class="button_ajouter">
+    <button mat-flat-button (click)="openInsert()">Ajouter</button>
+  </div>
+  <div class="bloc_repas" *ngFor="let repa of rep">
+     <mat-card>
+      <div class="repas">
+        <h5>{{ repa.NOM_REPAS }}</h5>
+      </div>
+      <div class="emballage">
+        <p>Emballage: 300ar</p>
+      </div>
+      <div class="serviette">
+        <p>Serviette: 200Ar</p>
+      </div>
+      <div class="serviette">
+        <p>Couvert: 100Ar</p>
+      </div>
+      <div class="total_prix">
+        <p>Prix repas: 200 AR</p>
+      </div>
+      <div class="button_modifier">
+        <button mat-flat-button (click)="openModifier()">modifier</button>
+      </div>
+      <div class="button_suprimer">
+        <button mat-flat-button>suprimer</button>
+      </div>
+     </mat-card>
+  </div>
+</section>
+

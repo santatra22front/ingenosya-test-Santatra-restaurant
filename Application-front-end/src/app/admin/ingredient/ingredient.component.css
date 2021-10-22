@@ -1,0 +1,60 @@
+.ingredients{
+  padding: 15px;
+}
+.ingredients .titre {
+  display: flex;
+  justify-content: center;
+}
+.ingredients .titre h1{
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(179, 0, 149);
+}
+.ingredients .container{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.ingredients .container .button_ajouter{
+   margin: 10px;
+}
+.ingredients .container .button_ajouter button{
+  background: rgb(179, 0, 149);
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+}
+.ingredients .container .bloc_ingredients mat-card{
+  display: flex;
+  justify-content: space-between;
+ background-color: rgb(179, 0, 149);
+  margin-top: 10px;
+}
+.ingredients .container .bloc_ingredients mat-card .repas{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px!important;
+  background-color: white;
+}
+.ingredients .container .bloc_ingredients mat-card .repas h5{
+  color: rgb(179, 0, 149);
+  font-size: 16px;
+  font-weight: bold;
+
+}
+.ingredients .container .bloc_ingredients mat-card p{
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+.ingredients .container .bloc_ingredients mat-card .button_modifier button{
+  background: white;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: rgb(179, 0, 149);
+}

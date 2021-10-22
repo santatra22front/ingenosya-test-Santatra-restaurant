@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="close">
+    <button mat-flat-button color="accent" (click)="onClose()">Fermer</button>
+  </div>
+  <div class="form_content">
+    <form [formGroup]="service.form">
+      <div class="form_controles">
+        <input type="hidden" formControlName="$key">
+
+        <mat-form-field>
+          <input formControlName="repas" appearance="outline" matInput
+            placeholder="Repas">
+          <mat-error>Remplir le champ repas s'il vous plait.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="prixEmballage" appearance="outline" matInput
+            placeholder="Prix emballage">
+          <mat-error>Remplir le champ prix emballage s'il vous plait.</mat-error>
+        </mat-form-field>
+
+
+        <mat-form-field>
+          <input formControlName="prixServiette" appearance="outline" matInput
+            placeholder="Prix serviette">
+          <mat-error>Remplir le champ prix serviette s'il vous plait.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="prixCouvert" appearance="outline" matInput
+            placeholder="Prix couvert">
+          <mat-error>Remplir le champ prix couvert s'il vous plait.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="prixRepas" appearance="outline" matInput
+            placeholder="Prix repas">
+          <mat-error>Remplir le champ prix repas s'il vous plait.</mat-error>
+        </mat-form-field>
+
+      </div>
+      <div class="button_submit">
+        <button mat-raised-button color="primary" type="submit"
+          [disabled]="service.form.invalid">Modifier</button>
+      </div>
+    </form>
+  </div>
+</div>
+

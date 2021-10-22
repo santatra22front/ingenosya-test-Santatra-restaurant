@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="header">
+    <div class="titre">
+      <h5>Confirmation</h5>
+    </div>
+    <div class="close">
+      <button mat-flat-button color="accent" (click)="onClose()">Fermer</button>
+    </div>
+  </div>
+  <div class="body">
+    <form [formGroup]="service.form" class="normal-form">
+      <input type="hidden" formControlName="$key">
+      <div class="radio">
+        <mat-checkbox formControlName="emballage"><span>Voulez-vous avec un emballage?</span></mat-checkbox>
+        <h6>Prix 400 Ar</h6>
+      </div>
+      <div class="radio">
+        <mat-checkbox formControlName="serviette"><span>Voulez-vous avec un serviette?</span></mat-checkbox>
+        <h6>Prix 200 Ar</h6>
+      </div>
+      <div class="radio">
+        <mat-checkbox formControlName="couvert"><span>Voulez-vous avec un couvert?</span></mat-checkbox>
+        <h6>Prix 100 Ar</h6>
+      </div>
+      <div class="footer">
+        <button mat-flat-button color="accent" type="submit">Valider</button>
+      </div>
+    </form>
+  </div>
+</div>
+

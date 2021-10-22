@@ -1,0 +1,23 @@
+.container .close{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.container .close button{
+  background: rgb(179, 0, 149);
+  font-weight: bold;
+  color: white;
+}
+.container .form_content{
+  margin-top: 10px;
+  width: 100%;
+}
+.container .form_content .form_controles mat-form-field {
+  margin: 10px;
+  width: 100%;
+}
+.container .form_content .button_submit{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

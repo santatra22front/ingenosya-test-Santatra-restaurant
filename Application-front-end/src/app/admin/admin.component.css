@@ -1,0 +1,19 @@
+.navbar{
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: rgb(179, 0, 149);
+}
+.navbar h5{
+  color: white;
+}
+.navbar button{
+  background: white;
+  color: rgb(179, 0, 149);
+  font-weight: bold;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.navbar button:hover{
+  transform: scale(1.1);
+}

@@ -1,0 +1,33 @@
+<mat-toolbar  class="navbar">
+  <div><h5>Restorant</h5></div>
+  <div>
+    <button mat-stroked-button routerLink="admin">Admin</button>
+
+  </div>
+</mat-toolbar>
+<section class="vente">
+  <div class="button_panier" color="warn">
+    <button mat-flat-button (click)="openPanier()">
+      Panier
+      <mat-icon matBadge="15" matBadgeColor="warn"></mat-icon>
+    </button>
+  </div>
+  <div class="produit row">
+    <mat-grid-list *ngFor="let repa of repas " cols="5">
+      <mat-grid-tile>
+        <mat-card class="example-card">
+          <mat-card-header>
+            <h4>{{ repa.NOM_REPAS }}</h4>
+          </mat-card-header>
+          <mat-card-content>
+            <h5>{{ repa.PRIX }}</h5>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-stroked-button (click)="openModal()">Acheter</button>
+          </mat-card-actions>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</section>
+

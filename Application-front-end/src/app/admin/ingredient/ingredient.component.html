@@ -1,0 +1,21 @@
+
+<section class="ingredients">
+  <div class="titre">
+    <h1>Listes Ingredients</h1>
+  </div>
+  <div class="container">
+    <div class="button_ajouter">
+      <button mat-flat-button (click)="openInsert()">Ajouter</button>
+    </div>
+    <div class="bloc_ingredients">
+       <mat-card *ngFor="let repa of rep">
+        <div class="repas">
+          <h5>{{ repa.NOM_REPAS }}</h5>
+        </div>
+        <div class="button_modifier">
+          <button mat-flat-button (click)="openIngredient()">Voir ingredients</button>
+        </div>
+       </mat-card>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,64 @@
+.repas{
+  padding: 15px;
+}
+.repas .titre {
+  display: flex;
+  justify-content: center;
+}
+.repas .titre h1{
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(179, 0, 149);
+}
+.repas .button_ajouter{
+   margin: 10px;
+}
+.repas .button_ajouter button{
+  background: rgb(179, 0, 149);
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+}
+.repas .bloc_repas mat-card{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(179, 0, 149);
+  margin-top: 10px;
+}
+.repas .bloc_repas mat-card .repas{
+  background-color: rgb(179, 0, 149);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px!important;
+}
+.repas .bloc_repas mat-card .repas h5{
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+.repas .bloc_repas mat-card p{
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(59, 59, 59);
+}
+.repas .bloc_repas mat-card .button_modifier button{
+  background: rgb(179, 0, 149);
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+}
+
+.repas .bloc_repas mat-card .button_suprimer button{
+  background: rgb(255, 0, 0);
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+}
